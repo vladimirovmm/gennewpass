@@ -23,7 +23,7 @@ impl CharacterVariants {
                 gen(&format!("{FORMAT_0}{FORMAT_A}{FORMAT_AA}{FORMAT_S}"), 8)
             }
             CharacterVariants::F16 => {
-                let mask = format!("{FORMAT_A}{FORMAT_AA}");
+                let mask = format!("{FORMAT_0}{FORMAT_A}{FORMAT_AA}");
 
                 { 0..4 }
                     .map(|_| gen(&mask, 4))
